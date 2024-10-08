@@ -8,7 +8,7 @@ module.exports = function(source) {
   return `
     let exports
     ${scripts}
-    exports.template = function() { return String.raw\`${html}\` }
+    exports.template = function() { return this.$tag\`${html}\` }
     export default exports
   `
 }
